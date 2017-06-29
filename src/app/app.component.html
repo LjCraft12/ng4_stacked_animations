@@ -1,5 +1,5 @@
 <!-- Container for item list to iterate through the items array-->
-<div class="container" [@listAnitmation]="items.length">
+<div class="container" [@listAnimation]="items.length">
 
   <button (click)="pushItem()">Add Item</button>
   <button (click)="removeItem()">Remove Item</button>
@@ -9,4 +9,18 @@
     <!-- String interpolation for the items in the items array in the app.components.ts file-->
     {{ item }}
   </div>
+
+  <div @explainerAnim>
+
+    <div class="col">
+      <p>Hey I am an animated paragraph</p>
+    </div>
+    <div class="col">
+      <p>Hey I am an animated paragraph as well</p>
+    </div>
+    <div class="col">
+      <p>Hey I am an animated paragraph and I am the best animated paragraph</p>
+    </div>
+  </div>
+
 </div>
