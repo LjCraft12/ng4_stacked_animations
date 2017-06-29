@@ -3,12 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+// 1 Import browser animations module
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // 2 add BrowserAnimationsModule to the imports array.
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
